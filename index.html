@@ -104,7 +104,12 @@
   .nav-toggle { display: none; background: none; border: 0; font-size: 26px; cursor: pointer; color: var(--ink); }
 
   /* ---------- Hero ---------- */
-  .hero { padding: 108px 0 76px; }
+  .hero {
+    min-height: calc(100vh - 78px);
+    display: flex;
+    align-items: center;
+    padding: 40px 0 96px;
+  }
   .hero h1 {
     font-size: clamp(44px, 7.4vw, 80px);
     font-weight: 800;
